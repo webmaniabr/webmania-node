@@ -1,0 +1,15 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+node_modules/
+vendor/
+artifacts/
+coverage/
+__pycache__/
+*.pyc
+dist/
+*.tgz
+
+# macOS metadata
+._*

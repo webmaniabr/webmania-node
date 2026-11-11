@@ -1,0 +1,49 @@
+{
+  "name": "@webmaniabr/sdk",
+  "version": "0.1.0-alpha.8",
+  "private": true,
+  "description": "Webmania Fiscal Issuer and Fiscal Monitor SDK (preview)",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "contracts.lock.json",
+    "LICENSE",
+    "docs",
+    "examples",
+    ".env.example"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "test:installed": "node scripts/first-use.mjs",
+    "example:homologacao": "sh examples/homologacao/run.sh --build",
+    "prepack": "npm run build",
+    "test:full-installed": "node scripts/full-scope-installed.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "typescript": "6.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webmaniabr/webmania-node.git"
+  },
+  "dependencies": {
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1"
+  }
+}

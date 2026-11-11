@@ -1,0 +1,355 @@
+{
+  "classification": "synthetic_homologation_structural_examples_replace_with_account_authorized_fiscal_data",
+  "models": {
+    "nfe": {
+      "client": "Nfe",
+      "operation": "emitirNfe",
+      "schema": "Nfe55IssueRequest",
+      "body": {
+        "ID": "controlled-001",
+        "modelo": "1",
+        "operacao": 1,
+        "natureza_operacao": "Synthetic sale",
+        "finalidade": 1,
+        "ambiente": 2,
+        "cliente": {
+          "cpf": "000.000.000-00",
+          "nome_completo": "Synthetic person",
+          "endereco": "Synthetic street",
+          "numero": "1",
+          "bairro": "Synthetic district",
+          "cidade": "Synthetic city",
+          "uf": "SP",
+          "cep": "01001-000"
+        },
+        "produtos": [
+          {
+            "nome": "Synthetic item",
+            "codigo": "0001",
+            "ncm": "0000.00.00",
+            "quantidade": "1.0000",
+            "unidade": "UN",
+            "subtotal": "0.10",
+            "total": "0.10",
+            "origem": 0,
+            "impostos": {
+              "icms": {
+                "codigo_cfop": "5102",
+                "situacao_tributaria": "102"
+              }
+            }
+          }
+        ],
+        "pedido": {
+          "presenca": 1,
+          "modalidade_frete": 9,
+          "pagamento": 0,
+          "forma_pagamento": "01",
+          "valor_pagamento": "0.10"
+        }
+      }
+    },
+    "nfce": {
+      "client": "Nfe",
+      "operation": "emitirNfce",
+      "schema": "Nfce65IssueRequest",
+      "body": {
+        "ID": "controlled-001",
+        "modelo": 2,
+        "operacao": 1,
+        "natureza_operacao": "Synthetic sale",
+        "finalidade": 1,
+        "ambiente": 2,
+        "produtos": [
+          {
+            "nome": "Synthetic item",
+            "codigo": "0001",
+            "ncm": "0000.00.00",
+            "quantidade": "1.0000",
+            "unidade": "UN",
+            "subtotal": "0.10",
+            "total": "0.10",
+            "origem": 0,
+            "impostos": {
+              "icms": {
+                "codigo_cfop": "5102",
+                "situacao_tributaria": "102"
+              }
+            }
+          }
+        ],
+        "pedido": {
+          "presenca": 1,
+          "modalidade_frete": 9,
+          "pagamento": 0,
+          "forma_pagamento": "01",
+          "valor_pagamento": "0.10"
+        }
+      }
+    },
+    "cte": {
+      "client": "Issuer",
+      "operation": "emitterIssueCte",
+      "schema": "EmitterIssueCtePayload",
+      "body": {
+        "ambiente": 2,
+        "modelo": "cte",
+        "natureza_operacao": "Synthetic passenger transport",
+        "modalidade": 1,
+        "finalidade": "0",
+        "contribuicao_tomador": 9,
+        "indicador_tomador": 4,
+        "local_inicio_prestacao": {
+          "cidade": "Synthetic origin",
+          "uf": "SP"
+        },
+        "local_termino_prestacao": {
+          "cidade": "Synthetic destination",
+          "uf": "RJ"
+        },
+        "tomador": {
+          "cnpj": "00000000000000",
+          "nome_razao": "Synthetic company",
+          "endereco": "Synthetic street",
+          "numero": "001",
+          "bairro": "Synthetic",
+          "cidade": "Synthetic city",
+          "uf": "SP"
+        },
+        "servico": {
+          "tipo": 0,
+          "valor_total": "100.00",
+          "valor_recebido": "100.00"
+        },
+        "carga": {
+          "produto_predominante": "Synthetic service",
+          "valor_total": "100.00",
+          "quantidades": [
+            {
+              "unidade_medida": "0",
+              "tipo_medida": "UNID",
+              "quantidade": "1.0000"
+            }
+          ]
+        },
+        "impostos": {
+          "cfop": "6353",
+          "classificacao_tributaria": "SN"
+        },
+        "documentos_fiscais": [
+          {
+            "tipo": "1",
+            "chave": "00000000000000000000000000000000000000000000"
+          }
+        ],
+        "rodoviario": {
+          "rntrc": "00000000"
+        },
+        "remetente": {
+          "cnpj": "00000000000000",
+          "nome_razao": "Synthetic company",
+          "endereco": "Synthetic street",
+          "numero": "001",
+          "bairro": "Synthetic",
+          "cidade": "Synthetic city",
+          "uf": "SP"
+        },
+        "destinatario": {
+          "cnpj": "00000000000000",
+          "nome_razao": "Synthetic company",
+          "endereco": "Synthetic street",
+          "numero": "001",
+          "bairro": "Synthetic",
+          "cidade": "Synthetic city",
+          "uf": "SP"
+        }
+      }
+    },
+    "cte_os": {
+      "client": "Issuer",
+      "operation": "emitterIssueCte",
+      "schema": "EmitterIssueCtePayload",
+      "body": {
+        "ambiente": 2,
+        "modelo": "cte_os",
+        "natureza_operacao": "Synthetic passenger transport",
+        "modalidade": 1,
+        "finalidade": "0",
+        "contribuicao_tomador": 9,
+        "indicador_tomador": 4,
+        "local_inicio_prestacao": {
+          "cidade": "Synthetic origin",
+          "uf": "SP"
+        },
+        "local_termino_prestacao": {
+          "cidade": "Synthetic destination",
+          "uf": "RJ"
+        },
+        "tomador": {
+          "cnpj": "00000000000000",
+          "nome_razao": "Synthetic company",
+          "endereco": "Synthetic street",
+          "numero": "001",
+          "bairro": "Synthetic",
+          "cidade": "Synthetic city",
+          "uf": "SP"
+        },
+        "servico": {
+          "tipo": 6,
+          "descricao": "Synthetic passenger transport",
+          "valor_total": "100.00",
+          "valor_recebido": "100.00"
+        },
+        "carga": {
+          "produto_predominante": "Synthetic service",
+          "valor_total": "100.00",
+          "quantidades": [
+            {
+              "quantidade": "1.0000"
+            }
+          ]
+        },
+        "impostos": {
+          "cfop": "6353",
+          "classificacao_tributaria": "SN"
+        },
+        "documentos_fiscais": [
+          {
+            "numero": "001",
+            "data_emissao": "2026-01-01",
+            "valor_documento": "100.00"
+          }
+        ],
+        "rodoviario": {
+          "taf_cte_os": "000000000000",
+          "tipo_fretamento": "2"
+        }
+      }
+    },
+    "nfse": {
+      "client": "Issuer",
+      "operation": "emitterIssueNfse",
+      "schema": "EmitterIssueNfsePayload",
+      "body": {
+        "ambiente": 2,
+        "rps": [
+          {
+            "servico": {
+              "discriminacao": "Synthetic service",
+              "valor_servicos": "100.00",
+              "iss_retido": 2
+            }
+          }
+        ]
+      }
+    },
+    "mdfe": {
+      "client": "Issuer",
+      "operation": "emitterIssueMdfe",
+      "schema": "EmitterIssueMdfePayload",
+      "body": {
+        "ambiente": "2",
+        "carregamento": [
+          {
+            "nome_municipio": "synthetic"
+          }
+        ],
+        "descarregamento": [
+          {
+            "documentos_fiscais": [
+              {
+                "chave": "00000000000000000000000000000000000000000000"
+              }
+            ],
+            "nome_municipio": "synthetic"
+          }
+        ],
+        "emitente": "1",
+        "modalidade": "1",
+        "peso_bruto": "synthetic",
+        "uf_carregamento": "synthetic",
+        "uf_descarregamento": "synthetic",
+        "unidade": "01",
+        "valor_carga": "synthetic",
+        "rodoviario": {}
+      }
+    },
+    "nfcom": {
+      "client": "Issuer",
+      "operation": "emitterIssueNfcom",
+      "schema": "EmitterIssueNfcomPayload",
+      "body": {
+        "ambiente": 2,
+        "natureza_operacao": "Synthetic communication",
+        "tipo_operacao": 1,
+        "finalidade": 1,
+        "tipo_faturamento": 0,
+        "cliente": {
+          "cnpj": "00000000000000",
+          "razao_social": "Synthetic company",
+          "indicador_ie": 9,
+          "endereco": {
+            "logradouro": "Synthetic street",
+            "numero": "001",
+            "bairro": "Synthetic",
+            "codigo_municipio": "3550308",
+            "municipio": "Synthetic municipality",
+            "uf": "SP",
+            "cep": "00000000"
+          }
+        },
+        "assinante": {
+          "codigo": "SYNTHETIC",
+          "tipo": 1,
+          "tipo_servico": 4,
+          "contrato": {
+            "numero": "SYNTHETIC",
+            "data_inicio": "2026-01-01",
+            "data_fim": "2026-12-31"
+          }
+        },
+        "itens": [
+          {
+            "descricao": "Synthetic communication service",
+            "unidade": "MES",
+            "quantidade": "1.0000",
+            "valor_unitario": "99.90",
+            "valor_total": "99.90",
+            "indicador_total": 1,
+            "classe_imposto": "REF123456"
+          }
+        ]
+      }
+    },
+    "dce": {
+      "client": "Issuer",
+      "operation": "emitterIssueDce",
+      "schema": "EmitterIssueDcePayload",
+      "body": {
+        "ambiente": "2",
+        "itens": [
+          {
+            "descricao": "synthetic",
+            "ncm": "00000000",
+            "quantidade": 0.0,
+            "valor_unitario": 0.0
+          }
+        ],
+        "cliente": {
+          "cnpj": "00000000000000",
+          "cpf": "00000000000",
+          "identificacao_alternativa": "synthetic",
+          "nome_completo": "synthetic",
+          "razao_social": "synthetic"
+        },
+        "emitente": {
+          "cnpj": "00000000000000",
+          "cpf": "00000000000",
+          "identificacao_alternativa": "synthetic",
+          "nome_completo": "synthetic",
+          "razao_social": "synthetic"
+        }
+      }
+    }
+  }
+}

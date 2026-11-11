@@ -1,0 +1,10 @@
+{
+  "source": "read_only_reference_corpus",
+  "source_repository": "webmania-python",
+  "contract_digest": "371a499f74012bb6b41f23642869dee4954e8394dcba7642edc701aedb3dd59e",
+  "classification": "synthetic_schema_and_wire_examples_not_fiscal_acceptance",
+  "sha256": {
+    "operations.json": "d1430e4ae87ee99016519fbc0e596e86bfe01ef91389ea5f4efcc239856c420e",
+    "semantic_cases.json": "28d5ee2330148728b67d337217c0ce3f071870fc50cfb2182e2e7cde9efac384"
+  }
+}

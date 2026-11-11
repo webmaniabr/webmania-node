@@ -1,0 +1,122 @@
+{
+  "classification": "synthetic_structural_examples_replace_with_authorized_account_data",
+  "operations": {
+    "monitorSearchDocuments": {
+      "body": {
+        "modelo": "nfe",
+        "filtros": {
+          "empresa_uuid": [
+            "00000000-0000-0000-0000-000000000000"
+          ],
+          "categoria": [
+            "recebidas"
+          ],
+          "status": [
+            "aprovado"
+          ]
+        },
+        "filtros_modelo": {
+          "operacao": [
+            "0",
+            1
+          ]
+        },
+        "paginacao": "cursor"
+      }
+    },
+    "monitorGetDocument": {
+      "path": {
+        "fd": "00000000-0000-4000-8000-000000000001"
+      }
+    },
+    "monitorListDocumentEvents": {
+      "path": {
+        "fd": "00000000-0000-4000-8000-000000000001"
+      }
+    },
+    "monitorManifestDocument": {
+      "path": {
+        "fd": "00000000-0000-4000-8000-000000000001"
+      },
+      "body": {
+        "evento": 1,
+        "manifestacao": 3,
+        "justificativa": "Synthetic justified operation"
+      }
+    },
+    "monitorListReports": {},
+    "monitorDownloadReport": {
+      "path": {
+        "report": "00000000-0000-4000-8000-000000000001"
+      }
+    },
+    "monitorImportDocument": {
+      "body": {
+        "empresa_uuid": "00000000-0000-4000-8000-000000000000",
+        "chave": "00000000000000000000000000000000000000000000"
+      }
+    },
+    "monitorGetImportStatus": {
+      "path": {
+        "uuid": "00000000-0000-4000-8000-000000000001"
+      }
+    },
+    "monitorCreateCompany": {
+      "body": {
+        "cnpj": "00000000000000",
+        "razao_social": "Synthetic company",
+        "cep": "01001000",
+        "certificado_base64": "PHRlc3QvPg==",
+        "certificado_senha": "synthetic-placeholder"
+      }
+    },
+    "monitorUpdateCompany": {
+      "path": {
+        "company": "00000000-0000-4000-8000-000000000001"
+      },
+      "body": {
+        "modelos_download": []
+      }
+    },
+    "monitorCreateCompanyMunicipality": {
+      "path": {
+        "company": "00000000-0000-4000-8000-000000000001"
+      },
+      "body": {
+        "codigo_ibge": "3550308"
+      }
+    },
+    "monitorUpdateCompanyMunicipality": {
+      "path": {
+        "company": "00000000-0000-4000-8000-000000000001",
+        "download": "00000000-0000-4000-8000-000000000001"
+      },
+      "body": {}
+    },
+    "monitorDeleteCompanyMunicipality": {
+      "path": {
+        "company": "00000000-0000-4000-8000-000000000001",
+        "download": "00000000-0000-4000-8000-000000000001"
+      }
+    },
+    "monitorListCompanies": {},
+    "monitorGetCompany": {
+      "path": {
+        "company": "00000000-0000-4000-8000-000000000001"
+      }
+    },
+    "monitorListCompanyMunicipalities": {
+      "path": {
+        "company": "00000000-0000-4000-8000-000000000001"
+      }
+    },
+    "monitorGetCompanyMunicipality": {
+      "path": {
+        "company": "00000000-0000-4000-8000-000000000001",
+        "download": "00000000-0000-4000-8000-000000000001"
+      }
+    },
+    "monitorListAvailableMunicipalities": {},
+    "monitorGetDownloadStatistics": {}
+  }
+}

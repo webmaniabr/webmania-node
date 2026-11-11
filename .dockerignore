@@ -1,0 +1,12 @@
+.git
+node_modules
+dist
+artifacts
+*.tgz
+.env
+.env.*
+!.env.example
+
+# macOS metadata is never a build input
+**/.DS_Store
+**/._*
